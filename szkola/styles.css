@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('dws.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+/* Logo container */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+}
+
+/* Info container */
+.info {
+    background: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #d2b48c; /* Sand color border */
+}
+
+#status {
+    font-size: 2em;
+    margin: 0;
+}
+
+#time-remaining {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+/* QR code container */
+.qr-code {
+    display: flex;
+    margin: 250px 0;
+    width: 300px; /* Twice the original size */
+    border-radius: 10px; /* Rounded corners */
+    position: absolute;
+    bottom: -170px;
+    left: 11%;
+    transform: translateX(-50%);
+}
+
+/* Instructions container */
+.instructions {
+    background: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 35px; /* Increased padding */
+    border-radius: 10px;
+    border: 2px solid #d2b48c; /* Sand color border */
+    margin-top: 215px;
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold text */
+    margin-left: 310px; /* Move right */
+    font-size: 1.5em; /* Increased font size */
+    text-align: left;
+}
+
+/* Lucky number container */
+.lucky-number {
+    background: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #d2b48c; /* Sand color border */
+    margin-top: -433px;
+    text-align: center;
+    margin-left: 700px;
+    height: 10vh;
+    margin-top: -633px;
+}
+
+/* Video container */
+.video-container {
+    width: 560px; /* Standard YouTube video width */
+    height: 300px; /* Standard YouTube video height */
+    margin-top: 216px;
+    margin-left: 700px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* News ticker container */
+.news-ticker {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #333, #444); /* Gradient background */
+    color: #fff; /* White text color */
+    padding: 10px 0;
+    overflow: hidden;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    font-family: 'Arial', sans-serif; /* Professional font */
+    font-size: 1.2em; /* Slightly larger font size */
+}
+
+.news-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 1000s linear infinite; /* Slower animation */
+    animation-delay: 0s; /* Start immediately */
+}
+
+.news-separator {
+    margin: 0 50px; /* Increase the gap between news items */
+}
+
+@keyframes ticker {
+    100% {
+        transform: translateX(-100%);
+    }
+}

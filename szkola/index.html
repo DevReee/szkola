@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacje Szkolne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo Szkoły" class="logo">
+        <div class="info">
+            <h1 id="status">Status: Lekcja</h1>
+            <p id="time-remaining">Pozostały czas: 45 minut</p>
+        </div>
+        <img src="qr.png" alt="QR Code" class="qr-code">
+        <div class="instructions">
+            <p>1. Zeskanuj kod QR</p>
+            <p>2. Zarejestruj się</p>
+            <p>3. Zbieraj punkty</p>
+            <p>4. Wymień na nagrody</p>
+        </div>
+        <div class="lucky-number">
+            <h2>Szczęśliwy numerek: <span id="lucky-number"></span></h2>
+        </div>
+        <div class="video-container">
+            <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/8MgQdX-dbuc?loop=1&playlist=8MgQdX-dbuc&controls=0&disablekb=1&modestbranding=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="news-ticker">
+        <div class="news-content" id="news-content">
+            <!-- News items will be dynamically inserted here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
